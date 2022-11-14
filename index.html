@@ -4,7 +4,6 @@
     <head>
         <title>Give me your password</title>
         <meta charset="utf-8">
-        
         <style>
             html, body {
                width: 100%;
@@ -16,8 +15,8 @@
            
             #billy {
                position: absolute;
-               top: calc(50% - 260px);
-               left: 0;
+               top: 0; left: 0;
+               display: none;
                z-index: 1;
             }
            
@@ -26,7 +25,6 @@
                bottom: 5%;
                left: 12%;
                display: none;
-               z-index: 3;
             }
            
             #dick {
@@ -81,6 +79,9 @@
             
             function correct(){
                 document.getElementById("remix").style.display = "block";
+                document.getElementById("billy").style.display = "block";
+                
+                document.getElementById("dick").style.display = "none";
             };
             
             function incorrect(){
