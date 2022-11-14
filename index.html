@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<html translate="no">
+    <head>
+        <title>Give me your password</title>
+        <meta charset="utf-8">
+        
+        <style>
+            html, body {
+               width: 100%;
+               height: 100%;
+               
+               margin: 0;
+               padding: 0;
+            }
+           
+            #billy {
+               position: absolute;
+               top: calc(50% - 260px);
+               left: 0;
+               z-index: 1;
+            }
+           
+            #remix {
+               position: absolute;
+               bottom: 5%;
+               left: 12%;
+               display: none;
+            }
+           
+            #dick {
+               position: absolute;
+               left: 15%;
+               top: 45%;
+               z-index: 2;
+               background-color: white;
+               text-align: center;
+            }
+            
+            #fisting {
+                position: absolute;
+                left: 0; top: 0;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="fisting">
+            
+        </div>
+        
+        <div id="dick">
+            <a>give me your password:</a><br>
+            <input type="text" id="password">
+            <input type="button" id="suck" value="my password?">
+        </div>
+        
+        <image id="billy" src="./billy.png" width="100%"></image>
+        <audio id="remix" controls src="./orlyonok.mp3" type="audio/mp3">
+            <!--a href="./orlyonok.mp3">Скачайте музыку</a-->.
+        </audio>
+        
+        
+        <script>
+            //let lastEnter = localStorage.getItem("gachi");
+            
+            //if(lastEnter && (new Date() - new Date(lastEnter))
+        
+            document.getElementById("suck").onclick = () => {
+                let pass = document.getElementById("password").value.replace(/\s+/g, " ").toLowerCase();
+               
+                if(pass == "oral cumshot" || pass == "oral cumshot "){
+                    correct()
+                }else{
+                    incorrect()
+                }
+                
+                document.getElementById("password").value = "";
+            };
+            
+            function correct(){
+                document.getElementById("remix").style.display = "block";
+            };
+            
+            function incorrect(){
+                localStorage.
+                
+                document.getElementById("dick").style.display = "none";
+            };
+        </script>
+    </body>
+</html>
