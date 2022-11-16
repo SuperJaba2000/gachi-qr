@@ -1,98 +1,33 @@
 <!DOCTYPE HTML>
 
 <html translate="no">
-    <head>
-        <title>Give me your password</title>
-        <meta charset="utf-8">
-        <style>
-            html, body {
-               width: 100%;
-               height: 100%;
-               
-               margin: 0;
-               padding: 0;
-            }
-           
-            #billy {
-               position: absolute;
-               top: 0; left: 0;
-               display: none;
-               z-index: 1;
-            }
-           
-            #remix {
-               position: absolute;
-               top: 40%;
-               left: 25%;
-               width: 50%;
-               height: 20%;
-               z-index: 3;
-               
-               display: none;
-            }
-           
-            #dick {
-               position: absolute;
-               left: 15%;
-               top: 45%;
-               z-index: 2;
-               background-color: white;
-               text-align: center;
-            }
-            
-            #fisting {
-                position: absolute;
-                left: 0; top: 0;
-                display: none;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="fisting">
-            
-        </div>
-        
-        <div id="dick">
-            <a>give me your password:</a><br>
-            <input type="text" id="password">
-            <input type="button" id="suck" value="my password?">
-        </div>
-        
-        <image id="billy" src="./billy.png" width="100%"></image>
-        <audio id="remix" controls src="./orlyonok.mp3" type="audio/mp3">
-            <!--a href="./orlyonok.mp3">Скачайте музыку</a-->.
-        </audio>
-        
-        
-        <script>
-            //let lastEnter = localStorage.getItem("gachi");
-            
-            //if(lastEnter && (new Date() - new Date(lastEnter))
-        
-            document.getElementById("suck").onclick = () => {
-                let pass = document.getElementById("password").value.replace(/\s+/g, " ").toLowerCase();
-               
-                if(pass == "oral cumshot" || pass == "oral cumshot "){
-                    correct()
-                }else{
-                    incorrect()
-                }
-                
-                document.getElementById("password").value = "";
-            };
-            
-            function correct(){
-                document.getElementById("remix").style.display = "block";
-                document.getElementById("billy").style.display = "block";
-                
-                document.getElementById("dick").style.display = "none";
-            };
-            
-            function incorrect(){
-                localStorage.
-                
-                document.getElementById("dick").style.display = "none";
-            };
-        </script>
+	<head>
+		<title>Give me your password</title>
+        <meta charset='utf-8'>
+		<link rel='stylesheet' href='styles.css'/>
+	</head>
+	<body>
+		<div id='base-font' class="font">
+		    <image class='image' id='hackerman' src='./hackerman.png'></image>
+			<div id='input-form'>
+				<a>give me your password: </a><br>
+				<input type='text' id='password' placeholder='my password?'>
+				<input type='button' id='enter' value='enter'>				
+			</div>
+		</div>
+		
+		<div id='correct-font' class="font">
+			<image class='image' id='billy' src='./billy.png'></image>
+			<audio id='music' controls src='./orlyonok.mp3' type='audio/mp3'></audio>
+		</div>
+		
+		<div id='incorrect-font' class="font">
+		     <a id='incorrect-text'></a>
+			 <image class='image' id='bondage' src='./bondage.png'></image>
+		</div>
+		
+        <script src='./scripts.js'></script>
     </body>
 </html>
+
+<!-- require('node:os').networkInterfaces().find( i => !i[0].local && i[0].data['name'] == ''). -->

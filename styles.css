@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+	touch-action: none;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	
+	font-size: 1.4rem;
+	
+	color: white;
+	background-color: black;
+}
+
+
+
+.font {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+#correct-font, #incorrect-font {
+	display: none;
+	text-align: center;
+}
+
+.image {
+	display: table-cell; 
+	vertical-align: middle;
+	
+	background-size: cover;
+
+	
+	max-width: 100%; 
+	height: auto;
+}
+	
+#input-form, #music, #incorrect-text {
+	position: absolute;
+	top: 44%;
+	left: 30%;
+	
+	width: 40%;
+	height: 12%;
+	text-align: center;
+	z-index: 2;
+}
+
+#password {
+    height: 1em;
+    font-size: 0.8rem;	
+}
+
+#enter {
+	height: 1.2em;
+	font-size: 0.8rem;
+	position: relative;
+	top: 0.1em;
+}
