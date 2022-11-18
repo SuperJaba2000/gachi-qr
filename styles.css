@@ -40,18 +40,23 @@ html, body {
 	background-size: cover;
         
         margin: 0;
-        position: absolute;               /* 2 */
-        top: 50%;                         /* 3 */
-        transform: translate(0, -50%) }   /* 4 */
+        position: absolute;             
+        top: 50%;                     
+        transform: translate(0, -50%);
 
         width: 100%;
 	height: auto;
 }
 	
 #input-form, #music, #incorrect-text {
-	position: absolute;
+	/*position: absolute;
 	top: 44%;
-	left: 30%;
+	left: 30%;*/
+
+        margin: 0;
+        position: absolute;             
+        top: 50%;                     
+        transform: translate(0, -50%);
 	
 	width: 40%;
 	height: 12%;
