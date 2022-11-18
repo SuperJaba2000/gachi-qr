@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	
-	touch-action: none;
+	/*touch-action: none;*/
 }
 
 html, body {
@@ -24,6 +24,8 @@ html, body {
 	width: 100%;
 	height: 100%;
 	background-size: cover;
+
+        position: relative;
 }
 
 #correct-font, #incorrect-font {
@@ -36,9 +38,13 @@ html, body {
 	vertical-align: middle;
 	
 	background-size: cover;
+        
+        margin: 0;
+        position: absolute;               /* 2 */
+        top: 50%;                         /* 3 */
+        transform: translate(0, -50%) }   /* 4 */
 
-	
-	max-width: 100%; 
+        width: 100%;
 	height: auto;
 }
 	
